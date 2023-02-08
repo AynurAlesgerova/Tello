@@ -1,0 +1,255 @@
+@import url("https://fonts.cdnfonts.com/css/euclid-circular-a");
+.container {
+  margin: 0 auto;
+  max-width: 1240px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Euclid Circular A";
+}
+
+ol, ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.basket-body {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+.basket-body .basket-wrapper {
+  padding: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+@media (max-width: 576px) {
+  .basket-body .basket-wrapper {
+    flex-direction: column;
+  }
+}
+.basket-body .basket-wrapper .basket-items {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+@media (max-width: 576px) {
+  .basket-body .basket-wrapper .basket-items {
+    width: 100%;
+    position: relative;
+  }
+}
+.basket-body .basket-wrapper .basket-items .basket-item {
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+@media (max-width: 576px) {
+  .basket-body .basket-wrapper .basket-items .basket-item {
+    flex-direction: column;
+  }
+}
+.basket-body .basket-wrapper .basket-items .basket-item .product-img {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.basket-body .basket-wrapper .basket-items .basket-item .info {
+  display: flex;
+  flex-direction: column;
+}
+.basket-body .basket-wrapper .basket-items .basket-item .info .color-price-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+.basket-body .basket-wrapper .basket-items .basket-item .info .color-price-info .price {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  gap: 10px;
+}
+.basket-body .basket-wrapper .basket-items .basket-item .info .color-price-info .price .icon {
+  width: 12px;
+  height: 10px;
+}
+.basket-body .basket-wrapper .basket-items .basket-item .count {
+  gap: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.basket-body .basket-wrapper .basket-items .basket-item .count .div-icon {
+  width: 30px;
+  height: 30px;
+  background-color: #F2F2F2;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.basket-body .basket-wrapper .basket-items .basket-item .count .div-icon:hover {
+  background-color: #ccc;
+}
+.basket-body .basket-wrapper .basket-items .basket-item .deleteBtn {
+  cursor: pointer;
+}
+.basket-body .basket-wrapper .basket-total {
+  width: 25%;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+@media (max-width: 576px) {
+  .basket-body .basket-wrapper .basket-total {
+    width: 100%;
+  }
+}
+.basket-body .basket-wrapper .basket-total .total-list-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.basket-body .basket-wrapper .basket-total .total-list-item .list-item-price {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  gap: 10px;
+}
+.basket-body .basket-wrapper .basket-total .total-list-item .list-item-price .icon {
+  width: 15px;
+  height: 12px;
+}
+.basket-body .basket-wrapper .basket-total .total-price {
+  margin-top: 15px;
+}
+.basket-body .loading {
+  position: absolute;
+  top: 50%;
+  left: 48%;
+}
+.basket-body .loading .lds-default {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.basket-body .loading .lds-default div {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background: rgba(174, 169, 169, 0.8);
+  border-radius: 50%;
+  -webkit-animation: lds-default 1.2s linear infinite;
+          animation: lds-default 1.2s linear infinite;
+}
+.basket-body .loading .lds-default div:nth-child(1) {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  top: 37px;
+  left: 66px;
+}
+.basket-body .loading .lds-default div:nth-child(2) {
+  -webkit-animation-delay: -0.1s;
+          animation-delay: -0.1s;
+  top: 22px;
+  left: 62px;
+}
+.basket-body .loading .lds-default div:nth-child(3) {
+  -webkit-animation-delay: -0.2s;
+          animation-delay: -0.2s;
+  top: 11px;
+  left: 52px;
+}
+.basket-body .loading .lds-default div:nth-child(4) {
+  -webkit-animation-delay: -0.3s;
+          animation-delay: -0.3s;
+  top: 7px;
+  left: 37px;
+}
+.basket-body .loading .lds-default div:nth-child(5) {
+  -webkit-animation-delay: -0.4s;
+          animation-delay: -0.4s;
+  top: 11px;
+  left: 22px;
+}
+.basket-body .loading .lds-default div:nth-child(6) {
+  -webkit-animation-delay: -0.5s;
+          animation-delay: -0.5s;
+  top: 22px;
+  left: 11px;
+}
+.basket-body .loading .lds-default div:nth-child(7) {
+  -webkit-animation-delay: -0.6s;
+          animation-delay: -0.6s;
+  top: 37px;
+  left: 7px;
+}
+.basket-body .loading .lds-default div:nth-child(8) {
+  -webkit-animation-delay: -0.7s;
+          animation-delay: -0.7s;
+  top: 52px;
+  left: 11px;
+}
+.basket-body .loading .lds-default div:nth-child(9) {
+  -webkit-animation-delay: -0.8s;
+          animation-delay: -0.8s;
+  top: 62px;
+  left: 22px;
+}
+.basket-body .loading .lds-default div:nth-child(10) {
+  -webkit-animation-delay: -0.9s;
+          animation-delay: -0.9s;
+  top: 66px;
+  left: 37px;
+}
+.basket-body .loading .lds-default div:nth-child(11) {
+  -webkit-animation-delay: -1s;
+          animation-delay: -1s;
+  top: 62px;
+  left: 52px;
+}
+.basket-body .loading .lds-default div:nth-child(12) {
+  -webkit-animation-delay: -1.1s;
+          animation-delay: -1.1s;
+  top: 52px;
+  left: 62px;
+}
+@-webkit-keyframes lds-default {
+  0%, 20%, 80%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+}
+@keyframes lds-default {
+  0%, 20%, 80%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+}/*# sourceMappingURL=Basket-products.css.map */

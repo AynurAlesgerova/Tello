@@ -1,0 +1,88 @@
+.category-card-wrapper{
+        grid-gap: 20px;
+        margin-top: 50px;
+        padding: 10px;
+        .categories-block{
+            display: grid;
+            gap: 10px;
+            grid-template-areas:
+                "first first second second"
+                "first first third third";
+            @media (max-width: 576px){
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+            }
+            .category-card{
+                display: flex;
+                flex-direction: column;
+                background: linear-gradient(180deg,#f2e4dd,#e9e9e9);
+                border-radius: 8px;
+                padding: 40px 0 0 40px;
+                position: relative;
+                .title{
+                    font-size: 2rem;
+                    font-weight: 500;
+                    line-height: 3.2rem;
+                }
+            }
+            .first{
+                grid-area: first;
+                position: relative;
+                width: 700px;
+                height: 610px;
+                @media (max-width: 576px){
+                    height: 320px;
+                    width: 380px;
+                }
+                .first-img{
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    width: 600px;
+                    height: 500px;
+                    @media (max-width: 576px){
+                        width: 300px;
+                        height: 200px;
+                    }
+                }
+            }
+            .second{
+                grid-area: second;
+                height: 300px;
+                width: 500px;
+                @media (max-width: 576px){
+                    height: 320px;
+                    width: 380px;
+                }
+                .second-img{
+                    position: absolute;
+                    bottom: 0;
+                    right: 20px;
+                    width: 200px;
+                    height: 200px;
+                }
+            }
+            .third{
+                grid-area: third;
+                width: 500px;
+                height: 300px;
+                @media (max-width: 576px){
+                    height: 320px;
+                    width: 390px;
+                }
+                .third-img{
+                    position: absolute;
+                    bottom: 0;
+                    right: 20px;
+                    width: 250px;
+                    height: 200px;
+                    @media (max-width: 576px){
+                        height: 180px;
+                        width: 230px;
+                    }
+                }
+            }
+        }
+
+}

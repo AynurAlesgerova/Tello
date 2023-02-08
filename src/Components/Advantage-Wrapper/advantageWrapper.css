@@ -1,0 +1,18 @@
+.advantage-wrapper {
+  padding: 120px 0px;
+}
+.advantage-wrapper .advantage-block {
+  display: flex;
+}
+@media (max-width: 576px) {
+  .advantage-wrapper .advantage-block {
+    flex-direction: column;
+  }
+}
+.advantage-wrapper .advantage-block .advantage-item {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}/*# sourceMappingURL=advantageWrapper.css.map */

@@ -1,0 +1,19 @@
+.partners-wrapper {
+  padding: 60px;
+  background-color: #F5F5F7;
+}
+@media (max-width: 576px) {
+  .partners-wrapper {
+    display: none;
+  }
+}
+
+.partners-block {
+  display: flex;
+  justify-content: space-between;
+}
+.partners-block .img {
+  padding: 10px;
+  background-color: white;
+  border-radius: 8px;
+}/*# sourceMappingURL=partnersWrapper.css.map */

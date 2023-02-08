@@ -1,0 +1,16 @@
+.banner-wrapper{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 80px;
+    margin-bottom: 50px;
+    @media (max-width: 576px){
+        flex-direction: column;
+    }
+    .banner-block{
+        padding: 50px 80px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        box-shadow: 0 10px 15px -3px rgb(0 0 0 / 10%), 0 4px 6px -4px rgb(0 0 0 / 10%);
+    }
+}

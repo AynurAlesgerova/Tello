@@ -1,0 +1,193 @@
+@import '../../style/mixin';
+@import '../../style/reset';
+
+.basket-body{
+    @include flex-column(null, null);
+    margin-top: 50px;
+    margin-bottom: 100px;
+    
+    .basket-wrapper{
+        padding:  50px;
+        @include flex-row(space-between, center);
+        margin-top: 40px;
+        @media (max-width: 576px){
+            flex-direction: column;
+        }
+        .basket-items{
+            @include flex-column(null, null);
+            width: 70%;
+            @media (max-width: 576px){
+                width: 100%;
+                position: relative;
+            }
+            .basket-item{
+                padding: 20px;
+                @include flex-row(space-between, center);
+                gap: 20px;
+                margin-bottom: 30px;
+                border-radius: 8px;
+                box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+                @media (max-width: 576px){
+                    flex-direction: column;
+                }
+                .product-img{
+                    @include flex-row(null, center);
+                }
+                .info{
+                    @include flex-column(null, null);
+                    .color-price-info{
+                        @include flex-row(null, center);
+                        gap: 20px;
+                        .price{
+                            @include flex-row(null, baseline);
+                            gap: 10px;
+                            .icon{
+                                width: 12px;
+                                height: 10px;
+                            }
+                        }
+                    }
+                }
+                .count{
+                    gap: 15px;
+                    @include flex-row(null, center);
+                    .div-icon{
+                        width: 30px;
+                        height: 30px;
+                        background-color:  #F2F2F2;
+                        border-radius: 20px;
+                        @include flex-row(center, center);
+                        cursor: pointer;
+                        &:hover{
+                            background-color: #ccc;
+                        }
+                    }
+                }
+                .deleteBtn{
+                    cursor: pointer;
+                  //   @media (max-width: 576px){
+                  //    position: absolute;
+                  //    right: 15px;
+                  //    top: 15px;
+                  // }
+                }
+                
+            }
+        }
+        .basket-total{
+            width: 25%;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            @media (max-width: 576px){
+                width: 100%;
+            }
+            .total-list-item{
+                @include flex-row(space-between, null);
+                margin-top: 10px;
+                .list-item-price{
+                    @include flex-row(null, baseline);
+                    gap: 10px;
+                    .icon{
+                        width: 15px;
+                        height: 12px;
+                    }
+                }
+            }
+            .total-price{
+                margin-top: 15px;
+            }
+        }
+    }
+
+    .loading{
+        position: absolute;
+        top: 50%;
+        left:  48%;
+        .lds-default {
+            display: inline-block;
+            position: relative;
+            width: 80px;
+            height: 80px;
+          }
+          .lds-default div {
+            position: absolute;
+            width: 6px;
+            height: 6px;
+            background: rgba(174, 169, 169, 0.8);
+            border-radius: 50%;
+            animation: lds-default 1.2s linear infinite;
+          }
+          .lds-default div:nth-child(1) {
+            animation-delay: 0s;
+            top: 37px;
+            left: 66px;
+          }
+          .lds-default div:nth-child(2) {
+            animation-delay: -0.1s;
+            top: 22px;
+            left: 62px;
+          }
+          .lds-default div:nth-child(3) {
+            animation-delay: -0.2s;
+            top: 11px;
+            left: 52px;
+          }
+          .lds-default div:nth-child(4) {
+            animation-delay: -0.3s;
+            top: 7px;
+            left: 37px;
+          }
+          .lds-default div:nth-child(5) {
+            animation-delay: -0.4s;
+            top: 11px;
+            left: 22px;
+          }
+          .lds-default div:nth-child(6) {
+            animation-delay: -0.5s;
+            top: 22px;
+            left: 11px;
+          }
+          .lds-default div:nth-child(7) {
+            animation-delay: -0.6s;
+            top: 37px;
+            left: 7px;
+          }
+          .lds-default div:nth-child(8) {
+            animation-delay: -0.7s;
+            top: 52px;
+            left: 11px;
+          }
+          .lds-default div:nth-child(9) {
+            animation-delay: -0.8s;
+            top: 62px;
+            left: 22px;
+          }
+          .lds-default div:nth-child(10) {
+            animation-delay: -0.9s;
+            top: 66px;
+            left: 37px;
+          }
+          .lds-default div:nth-child(11) {
+            animation-delay: -1s;
+            top: 62px;
+            left: 52px;
+          }
+          .lds-default div:nth-child(12) {
+            animation-delay: -1.1s;
+            top: 52px;
+            left: 62px;
+          }
+          @keyframes lds-default {
+            0%, 20%, 80%, 100% {
+              transform: scale(1);
+            }
+            50% {
+              transform: scale(1.5);
+            }
+          }
+          
+          
+            
+        }
+}

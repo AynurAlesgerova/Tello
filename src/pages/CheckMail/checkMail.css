@@ -1,0 +1,16 @@
+.check-mail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 200px;
+}
+@media (max-width: 576px) {
+  .check-mail {
+    width: 100%;
+    padding: 150px 30px;
+  }
+}
+.check-mail img {
+  margin-bottom: 20px;
+}/*# sourceMappingURL=checkMail.css.map */

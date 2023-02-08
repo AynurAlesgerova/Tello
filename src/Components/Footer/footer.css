@@ -1,0 +1,132 @@
+@import url("https://fonts.cdnfonts.com/css/euclid-circular-a");
+.container {
+  margin: 0 auto;
+  max-width: 1240px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Euclid Circular A";
+}
+
+ol, ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.footer-main {
+  background-color: #262626;
+  color: #fff;
+}
+.footer-main .footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 56px 0 90px 0;
+}
+@media (max-width: 576px) {
+  .footer-main .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.footer-main .footer .item-social-media {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.footer-main .footer .item-social-media .logo {
+  display: flex;
+  align-items: center;
+  width: 43.5px;
+  height: 48px;
+  margin-bottom: 26px;
+}
+.footer-main .footer .item-social-media .logo .logo-h2 {
+  color: #2DD06E;
+  font-weight: 500;
+  margin-left: 20px;
+  font-size: x-large;
+}
+.footer-main .footer .item-social-media .icons {
+  width: 148px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer-main .footer .item-social-media .icons .icon {
+  width: 19px;
+  height: 17px;
+  cursor: pointer;
+}
+.footer-main .footer .ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+@media (max-width: 576px) {
+  .footer-main .footer .ul {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.footer-main .footer .ul .ul-h2 {
+  text-align: center;
+  font-size: x-large;
+}
+.footer-main .footer .ul .list-item {
+  margin-top: 16px;
+}
+.footer-main .footer .ul .list-item .li-a {
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 2rem;
+  width: 100%;
+  color: white;
+  opacity: 0.8;
+}
+.footer-main .footer .ul .list-item .li-a:hover {
+  color: green;
+}
+.footer-main .sub-footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 0;
+}
+@media (max-width: 576px) {
+  .footer-main .sub-footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.footer-main .sub-footer .sub-footer-right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 270px;
+}
+@media (max-width: 576px) {
+  .footer-main .sub-footer .sub-footer-right {
+    display: none;
+  }
+}/*# sourceMappingURL=footer.css.map */

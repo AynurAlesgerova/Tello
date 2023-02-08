@@ -1,0 +1,18 @@
+.basket {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 200px 0;
+  gap: 20px;
+}
+.basket p {
+  opacity: 0.8;
+}
+.basket .basket-btn {
+  background-color: #2DD06E;
+  border-radius: 8px;
+  width: 280px;
+  height: 50px;
+  color: white;
+}/*# sourceMappingURL=basket-empty.css.map */

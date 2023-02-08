@@ -1,0 +1,16 @@
+.partners-wrapper{
+    padding: 60px;
+    background-color: #F5F5F7;
+    @media (max-width: 576px){
+        display: none;
+    }
+}
+.partners-block{
+    display: flex;
+    justify-content: space-between;
+    .img{
+        padding: 10px;
+        background-color: white;
+        border-radius: 8px;
+    }
+}

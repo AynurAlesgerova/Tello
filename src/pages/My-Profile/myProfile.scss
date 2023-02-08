@@ -1,0 +1,71 @@
+@import '../../style/mixin';
+@import '../../style/reset';
+
+
+.my-profile{
+    @include flex-row(center, null);
+    padding: 50px 200px;
+    @media (max-width: 576px){
+        padding: 20px;
+        @include flex-column(center, null);
+    }
+    gap: 10px;
+    .profile-actions{
+        width: 20%;
+        border-radius: 8px;
+        background-color: #FFFFFF;
+        padding: 10px;
+        @media (max-width: 576px){
+           order: 2;
+        }
+        .list{
+            @include flex-column(null, null);
+            gap: 14px;
+            .list-item{
+                display: flex;
+                gap: 10px;
+                cursor: pointer;
+                :hover{
+                    color: #2DD06E;
+                }
+                .icon{
+                    width: 20px;
+                    height: 18px;
+                }
+            }
+        }
+    }
+    .user-information{
+        width: 80%;
+        @include flex-column(null, null);
+        @media (max-width: 576px){
+            width: 100%;
+        }
+        .inputs{
+            display: flex;
+            flex-wrap: wrap;
+            .input{
+                border: 2px solid #F2F2F2;
+                background-color: #F2F2F2;
+                border-radius: 8px;
+                padding: 7px 0 7px 5px;
+                width: 80%;
+            }
+        }
+        .edit-button{
+            padding: 10px 50px;
+            border-radius: 8px;
+            background-color: #2DD06E;
+            display: flex;
+            gap: 10px;
+            color: white;
+            margin-left: 36%;
+            @include flex-row(center, center);  
+            @media (max-width: 576px){
+                margin: 0;
+                width: 100%;
+                padding: 10px 0;
+            }
+        }
+    }
+}

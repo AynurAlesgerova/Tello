@@ -1,0 +1,14 @@
+.check-mail{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 200px;
+    @media (max-width: 576px){
+        width: 100%;
+        padding: 150px 30px;
+    }
+    img{
+        margin-bottom: 20px;
+    }
+}
