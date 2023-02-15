@@ -1,11 +1,7 @@
+const ModuleScopePlugin = require('react-dev-utils/ModuleScopePlugin');
+
 module.exports = function override(config, env) {
-    const NodePolyfillWebpackPlugin = require("node-polyfill-webpack-plugin");
+    config.resolve.plugins = config.resolve.plugins.filter(plugin => !(plugin instanceof ModuleScopePlugin));
 
-    config.plugins.push(new NodePolyfillWebpackPlugin);
-
-    config.resolve.fallback = {
-        fs: false,
-        readline: require.resolve('./_readline.js')
-    }
     return config;
-}
+};
