@@ -128,6 +128,7 @@ const Header = () => {
                           </Link>
                         ))
                       }
+                      
                     </div>
                   </div>
               </div>
@@ -153,14 +154,23 @@ const Header = () => {
             </div>
 
             <nav className='nav-header'>
-                {
+                {/* {
                   categories?.map((el) =>(
                     <Link to={`/products/${el.slug.charAt(0).toUpperCase()+el.slug.slice(1)}`}>
                       <div key={uuidv4()} className='categories' >{el.slug.charAt(0).toUpperCase()+el.slug.slice(1)}</div>
                     </Link>
                     
                   ))
-                }
+                } */}
+                  <Link to={`/products/mobil-telefonlar`}>
+                    <div className='categories'>Mobil-Telefonlar</div>
+                  </Link>
+                  <Link to={`/products/Aksesuarlar`}>
+                    <div className='categories'>Aksesuarlar</div>
+                  </Link>
+                  <Link to={`/products/smart-saatlar`}>
+                    <div className='categories'>Smart-Saatlar</div>
+                  </Link>
             </nav>
             {
               onFocus &&
